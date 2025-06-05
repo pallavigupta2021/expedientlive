@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { FaRocket, FaBars, FaTimes, FaChevronDown, FaTwitter, FaLinkedin, FaPhone, FaEnvelope } from 'react-icons/fa'
-
+import { FaBars, FaTimes, FaChevronDown, FaTwitter, FaLinkedin, FaPhone, FaEnvelope } from 'react-icons/fa'
+import logo from '/logo.svg'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -94,9 +94,7 @@ function Header() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo - smaller on mobile */}
         <Link to="/" className="flex items-center space-x-2 group py-2">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent-color rounded-full flex items-center justify-center group-hover:bg-primary-color transition-colors duration-300">
-            <FaRocket className="text-white text-sm sm:text-xl group-hover:animate-bounce" />
-          </div>
+          <img src={logo} alt="Expedient Live Logo" className="w-8 h-8 sm:w-10 sm:h-10" />
           <div>
             <span className="text-xl sm:text-2xl font-extrabold text-white">EXPEDIENT</span>
             <span className="text-xl sm:text-2xl font-bold text-accent-color ml-1 animate-pulse duration-2000">LIVE</span>
@@ -400,26 +398,5 @@ function DropdownLink({ to, children, exact = false }) {
 
 
 export default Header
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
