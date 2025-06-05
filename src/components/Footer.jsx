@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaRocket } from 'react-icons/fa'
+import logo from '/logo.svg'
 
 function Footer() {
   return (
@@ -21,7 +22,7 @@ function Footer() {
           {/* Company Info */}
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center space-x-2 mb-6">
-              <FaRocket className="text-accent-color text-3xl" />
+              <img src={logo} alt="Expedient Live Logo" className="w-8 h-8" />
               <div>
                 <span className="text-2xl font-extrabold text-white">EXPEDIENT</span>
                 <span className="text-2xl font-bold text-accent-color ml-1">LIVE</span>
