@@ -148,7 +148,7 @@ function Contact() {
 
           <div className="w-full h-[500px] bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow-xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0456869175397!2d77.38016907619628!3d28.627270175685946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5f25ac323e5%3A0xfd9beb6a7a6e3d8e!2sSector%2063%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1718194825037!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0456869175397!2d77.385178!3d28.6175177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMjjCsDM3JzAzLjEiTiA3N8KwMjMnMDYuNiJF!5e0!3m2!1sen!2sin!4v1718194825037!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
