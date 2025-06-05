@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FaBars, FaTimes, FaChevronDown, FaTwitter, FaLinkedin, FaPhone, FaEnvelope } from 'react-icons/fa'
-import logo from '/logo.svg'
+import logo from '/headerlogo.svg';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -94,10 +94,10 @@ function Header() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo - smaller on mobile */}
         <Link to="/" className="flex items-center space-x-2 group py-2">
-          <img src={logo} alt="Expedient Live Logo" className="w-8 h-8 sm:w-10 sm:h-10" />
+          <img src={logo} alt="Expedient Live Logo" />
           <div>
-            <span className="text-xl sm:text-2xl font-extrabold text-white">EXPEDIENT</span>
-            <span className="text-xl sm:text-2xl font-bold text-accent-color ml-1 animate-pulse duration-2000">LIVE</span>
+            {/* <span className="text-xl sm:text-2xl font-extrabold text-white">EXPEDIENT</span> */}
+            {/* <span className="text-xl sm:text-2xl font-bold text-accent-color ml-1 animate-pulse duration-2000">LIVE</span> */}
           </div>
         </Link>
 
@@ -250,51 +250,7 @@ function Header() {
 
 
 
-            {/* Mobile Sectors Dropdown */}
-            {/* <div className="border-b border-border-color">
-              <button
-                onClick={() => toggleDropdown('mobileSectors')}
-                className={`py-3 px-4 text-base font-medium w-full text-left flex justify-between items-center transition-colors ${location.pathname.startsWith('/sectors') ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}
-              >
-                <span>Sectors</span>
-                <FaChevronDown className={`transition-transform ${activeDropdown === 'mobileSectors' ? 'rotate-180' : ''}`} />
-              </button>
-
-              {activeDropdown === 'mobileSectors' && (
-                <div style={{ background: "#111111" }}>
-                  <Link to="/sectors/highway-rural-roads" className={`block py-3 px-8 text-sm border-b border-border-color/50 transition-colors ${location.pathname === '/services/highway-rural-roads' ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
-                    Highways & Rural Roads
-                  </Link>
-                  <Link to="/sectors/bridge" className={`block py-3 px-8 text-sm border-b border-border-color/50 transition-colors ${location.pathname === '/services/bridge' ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
-                    Bridges, ROBs and Flyovers
-                  </Link>
-                  <Link to="/sectors/human-resource" className={`block py-3 px-8 text-sm border-b border-border-color/50 transition-colors ${location.pathname === '/services/human-resource' ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
-                    Human Resource Development
-                  </Link>
-                  <Link to="/sectors/building-structures" className={`block py-3 px-8 text-sm border-b border-border-color/50 transition-colors ${location.pathname === '/services/building-structures' ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
-                    Building & Structures
-                  </Link>
-                  <Link to="/sectors/airports" className={`block py-3 px-8 text-sm border-b border-border-color/50 transition-colors ${location.pathname === '/services/airports' ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
-                    Airports
-                  </Link>
-                  <Link to="/sectors/urban-infrastructure" className={`block py-3 px-8 text-sm border-b border-border-color/50 transition-colors ${location.pathname === '/services/urban-infrastructure' ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
-                    Urban Infrastructure
-                  </Link>
-                  <Link to="/sectors/traffic-transportation" className={`block py-3 px-8 text-sm border-b border-border-color/50 transition-colors ${location.pathname === '/services/traffic-transportation' ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
-                    Traffic and Transportation
-                  </Link>
-                  <Link to="/sectors/water-sewerage" className={`block py-3 px-8 text-sm border-b border-border-color/50 transition-colors ${location.pathname === '/services/water-sewerage' ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
-                    Water Supply & Sewerage
-                  </Link>
-                  <Link to="/sectors/geotechnical" className={`block py-3 px-8 text-sm border-b border-border-color/50 transition-colors ${location.pathname === '/services/geotechnical' ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
-                    Geo-technical Investigation
-                  </Link>
-                  <Link to="/sectors/quality-control" className={`block py-3 px-8 text-sm border-b border-border-color/50 transition-colors ${location.pathname === '/services/quality-control' ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
-                    Quality Control & Material Testing
-                  </Link>
-                </div>
-              )}
-            </div> */}
+           
 
              <Link to="/sectors" className={`py-3 px-4 text-base font-medium border-b border-border-color transition-colors ${location.pathname.startsWith('/sectors') ? 'text-black bg-[#FFC607]' : 'text-white hover:text-black hover:bg-[#FFC607]'}`}>
               Sectors

@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
+import logo from '/mainscreen.svg';
+
 import Home from './pages/Home'
 
 // Import About components
@@ -70,35 +72,11 @@ function App() {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <motion.div
-              animate={{
-                scale: [1, 1.2, 1],
-                rotate: [0, 180, 360],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="w-20 h-20 bg-accent-color rounded-full mx-auto mb-6 flex items-center justify-center"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </motion.div>
-            <motion.h2
-              animate={{
-                opacity: [0.5, 1, 0.5],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="text-3xl font-bold text-white"
-            >
-              EXPEDIENT LIVE
-            </motion.h2>
+        
+          <img src={logo} alt="Expedient Live Logo" />
+        
+     
+          
           </motion.div>
         </motion.div>
       ) : (

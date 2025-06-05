@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaRocket } from 'react-icons/fa'
-import logo from '/logo.svg'
+import logo from '/footerlogo.svg';
 
 function Footer() {
   return (
@@ -18,27 +18,24 @@ function Footer() {
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mx-auto">
           {/* Company Info */}
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center space-x-2 mb-6">
-              <img src={logo} alt="Expedient Live Logo" className="w-8 h-8" />
-              <div>
-                <span className="text-2xl font-extrabold text-white">EXPEDIENT</span>
-                <span className="text-2xl font-bold text-accent-color ml-1">LIVE</span>
-              </div>
+              <img src={logo} alt="Expedient Live Logo" />
+            
             </div>
             <p className="mb-6 text-text-light leading-relaxed text-center md:text-left">Expedient Live Research Consultancy Pvt. Ltd. is a multi-disciplinary infrastructure consulting engineering company with a passion for designing, building, and delivering sustainable solutions.</p>
-          
+
           </div>
 
           {/* Quick Links */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center md:items-center">
             <h3 className="text-xl font-bold mb-6 relative text-center inline-block">
               LINKS
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-accent-color rounded-full"></span>
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-2  gap-x-10 gap-y-2">
+            <div className="grid grid-cols-2 sm:grid-cols-2  gap-x-8 gap-y-2">
               <ul className="space-y-2">
                 <FooterLinkSimple to="/">Home</FooterLinkSimple>
                 {/* <FooterLinkSimple to="/about/team">Our Team</FooterLinkSimple> */}
@@ -47,26 +44,31 @@ function Footer() {
                 <FooterLinkSimple to="/about/services">Services</FooterLinkSimple>
               </ul>
               <ul className="space-y-2">
-                <FooterLinkSimple  to="/sectors">Sectors</FooterLinkSimple>
+                <FooterLinkSimple to="/sectors">Sectors</FooterLinkSimple>
                 <FooterLinkSimple to="/projects">Projects</FooterLinkSimple>
                 <FooterLinkSimple to="/career">Career</FooterLinkSimple>
-                <FooterLinkSimple  to="/contact" isButton>Contact</FooterLinkSimple>
-              
+                <FooterLinkSimple to="/contact" isButton>Contact</FooterLinkSimple>
+
               </ul>
             </div>
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-start md:items-start">
             <h3 className="text-xl font-bold mb-6 relative inline-block">
               CONTACT
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-accent-color rounded-full"></span>
             </h3>
             <ul className="space-y-4 w-full">
-              <li className="flex items-start">
-                <FaMapMarkerAlt className="mt-1 mr-3 text-accent-color flex-shrink-0" />
-                <span className="text-text-light">Expedient Live Research and Consultancy Pvt. Ltd.
-                  C-76, Sector - 63, Noida, Uttar Pradesh Pin code 201301</span>
+              <li className="flex ">
+                <FaMapMarkerAlt className="mt-1 mr-2  text-accent-color flex-shrink-0" />
+                <span className="text-text-light">
+                  <span className='whitespace-nowrap'>Expedient Live Research and Consultancy Pvt. Ltd.</span><br />
+                  301, 3rd Floor, C-76, Sector - 63,<br />
+                
+                  Noida, Uttar Pradesh 201301 
+                  
+                </span>
               </li>
               <li className="flex items-center">
                 <FaPhone className="mr-3 text-accent-color flex-shrink-0" />
@@ -90,7 +92,7 @@ function Footer() {
       <div className="mt-8 py-2 bg-[#FFC607] text-black shadow-inner ">
         <div className="absolute top-0 left-0 w-full  "></div>
         <div className="container mx-auto">
-          <p className="text-center font-medium " style={{margin: "0 0 0rem 0", lineHeight: "1.7"}}>&copy; 2025 Expedient Live Research Consultancy Pvt. Ltd. All rights reserved.</p>
+          <p className="text-center font-medium " style={{ margin: "0 0 0rem 0", lineHeight: "1.7" }}>&copy; 2025 Expedient Live Research Consultancy Pvt. Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

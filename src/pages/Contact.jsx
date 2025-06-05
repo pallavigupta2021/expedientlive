@@ -66,11 +66,13 @@ function Contact() {
               </div>
               <p className="text-gray-400 mb-4">
                 Expedient Live Research and Consultancy Pvt. Ltd.<br />
-                C-76, Sector - 63,<br />
-                Noida, Uttar Pradesh - 201301, India
+                301, 3rd Floor, C-76, Sector - 63,<br />
+
+                Noida, Uttar Pradesh 201301
+
               </p>
-              <a
-                href="https://maps.app.goo.gl/Ld5Eo9Ym9Eo9Ym9E"
+              {/* <a
+                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0456869175397!2d77.385178!3d28.6175177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMjjCsDM3JzAzLjEiTiA3N8KwMjMnMDYuNiJF!5e0!3m2!1sen!2sin!4v1718194825037!5m2!1sen!2sin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-[#FFC607] hover:text-white transition-colors"
@@ -79,7 +81,7 @@ function Contact() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
-              </a>
+              </a> */}
             </div>
 
             {/* Card 2 - Contact */}
@@ -141,14 +143,22 @@ function Contact() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Find Us On The Map</h2>
             <div className="w-24 h-1 bg-[#FFC607] mx-auto rounded-full mb-6"></div>
-            {/* <p className="text-gray-400 max-w-2xl mx-auto">
-              Visit our office in Noida to discuss your project requirements in person. We're conveniently located in Sector 63.
-            </p> */}
+            <p className="text-gray-400  mx-auto mb-4">
+              Visit our office in Noida to discuss your project requirements. Conveniently located in Sector 63.
+            </p>
+            <a
+              href="https://www.google.com/maps/place/Plot+No+C,+76,+Sector+63+Rd,+C+Block,+Sector+63,+Noida,+Hazratpur+Wajidpur,+Uttar+Pradesh+201301/@28.6177413,77.3804198,17z/data=!3m1!4b1!4m10!1m2!2m1!1sC-+76,+Sector+63+Rd+C+Block,+Sector+63+Noida,+Hazratpur+Wajidpur,+Uttar+Pradesh+201301!3m6!1s0x390ceff3427f6a17:0xb06a2d3f7237b807!8m2!3d28.6177367!4d77.3850332!15sClZDLSA3NiwgU2VjdG9yIDYzIFJkIEMgQmxvY2ssIFNlY3RvciA2MyBOb2lkYSwgSGF6cmF0cHVyIFdhamlkcHVyLCBVdHRhciBQcmFkZXNoIDIwMTMwMZIBCnN1YnByZW1pc2XgAQA!16s%2Fg%2F11s195s0yg?hl=en&entry=ttu&g_ep=EgoyMDI1MDYwMy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#FFC607] text-black font-semibold px-6 py-2 rounded hover:bg-yellow-400 transition"
+            >
+              View on Google Maps
+            </a>
           </div>
 
           <div className="w-full h-[500px] bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow-xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0456869175397!2d77.385178!3d28.6175177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMjjCsDM3JzAzLjEiTiA3N8KwMjMnMDYuNiJF!5e0!3m2!1sen!2sin!4v1718194825037!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14010.810104028597!2d77.37452489159274!3d28.616556829162932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5538f8142ef%3A0xd9fc1d637d601f94!2sC-76%2C%20Sector%2063%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1717665433000!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -161,6 +171,7 @@ function Contact() {
           </div>
         </div>
       </section>
+
 
       {/* Get In Touch Section */}
       {/* <section className="py-16 bg-gray-900">
